@@ -2,9 +2,11 @@
 .env
 .env.local
 
-# Node modules
+# Node modules (but not the folders themselves)
 node_modules/
-*/node_modules/
+python-service/node_modules/
+node-service/node_modules/
+frontend-react/node_modules/
 
 # Python
 __pycache__/
@@ -12,6 +14,9 @@ __pycache__/
 *.pyc
 venv/
 env/
+python-service/__pycache__/
+python-service/venv/
+python-service/env/
 
 # IDE
 .vscode/
@@ -27,3 +32,6 @@ Thumbs.db
 build/
 dist/
 *.log
+
+# React production build
+frontend-react/build/
